@@ -9,3 +9,35 @@
 body {
   overflow-x: hidden;
 }
+
+.apa::after {
+  content: "";
+  position: absolute;
+  top: 36px;
+  left: 0px;
+  width: 15px; /* Add this line */
+  height: 2px;
+  border-radius: 16px;
+  background-color: #FF0101;
+  transition: width ease-in-out 1000ms; /* Apply transition only to width */
+}
+
+.apa:hover::after {
+  width: 370px;
+}
+
+.apa2::after {
+  content: "";
+  position: absolute;
+  top: 70px;
+  left: 0px;
+  border-radius: 16px;
+  width: 15px; /* Add this line */
+  height: 3px;
+  background-color: #FF0101;
+  transition: width ease-in-out 1000ms; /* Apply transition only to width */
+}
+
+.apa2:hover::after {
+  width: 390px;
+}
